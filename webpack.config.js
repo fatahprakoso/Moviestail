@@ -11,7 +11,18 @@ const jsconfig = {
     rules: [
       {
         test: /.scss$/,
-        use: ['resolve-url-loader', 'sass-loader'],
+        use: [
+          'style-loader',
+          'css-loader',
+          'resolve-url-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              // eslint-disable-next-line global-require
+              implementation: require('sass'),
+            },
+          },
+        ],
       },
     ],
   },
