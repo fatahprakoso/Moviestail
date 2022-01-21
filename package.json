@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx mix",
-    "watch": "npx mix watch",
-    "prod": "npx mix -p",
-    "build": "webpack --config webpack.config.js",
+    "prod": "webpack --config webpack.config.js",
+    "dev": "NODE_ENV=development webpack --config webpack.config.js",
     "lint": "eslint ./"
   },
   "author": "FatahPrakoso @fatahap27@gmail.com",
