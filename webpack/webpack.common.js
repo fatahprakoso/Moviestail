@@ -12,7 +12,7 @@ module.exports = {
       },
 
       // this loader is used for extracting assets files.
-      // This loader needed to set up assetModuleFilename on output properties.
+      // this loader requires setting up the assetModuleFilename on output object.
       {
         test: /\.(svg|png|jpg|gif)$/,
         type: 'asset/resource',

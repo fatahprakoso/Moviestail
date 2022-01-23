@@ -9,7 +9,7 @@ const common = require('./webpack.common.js');
  * Dependencies note
  * 1. webpack-merge is used for merging webpack global configuration on
  *    webpack.common.js and this file
- * 2. html-webpack-plugin is used for updating linked js on html files that
+ * 2. html-webpack-plugin is used for updating linked js on html files
  */
 
 module.exports = webpackMerge(common, {
