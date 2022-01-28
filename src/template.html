@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="tes123" />
     <title>Document</title>
   </head>
   <body>
-    <header class="d-flex flex-column align-items-center">
+    <header class="header d-flex flex-column align-items-center">
       <div
         id="carouselExampleSlidesOnly"
         class="carousel slide"
@@ -15,17 +16,29 @@
       >
         <div class="carousel-inner">
           <div class="carousel-item active full-vh-vw">
-            <img src="./resources/header.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-content full-vh-vw"></div>
           </div>
           <div class="carousel-item full-vh-vw">
-            <img src="./resources/header.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-content full-vh-vw"></div>
           </div>
           <div class="carousel-item full-vh-vw">
-            <img src="./resources/header.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-content full-vh-vw"></div>
           </div>
         </div>
       </div>
-      <input type="search" placeholder="Search" />
+      <form class="search-form d-flex" onsubmit="event.preventDefault();">
+        <div
+          class="search-icon-bg d-flex align-items-center justify-content-center"
+        >
+          <span class="search-icon"></span>
+        </div>
+        <input
+          class="search"
+          type="search"
+          placeholder="Avangers, Interstellar, ..."
+        />
+        <button class="btn btn-success" type="button">Search</button>
+      </form>
     </header>
   </body>
 </html>
