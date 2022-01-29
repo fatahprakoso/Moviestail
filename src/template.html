@@ -26,18 +26,23 @@
           </div>
         </div>
       </div>
-      <form class="search-form d-flex" onsubmit="event.preventDefault();">
-        <div
-          class="search-icon-bg d-flex align-items-center justify-content-center"
-        >
-          <span class="search-icon"></span>
+      <form
+        class="search-form d-flex align-items-center justify-content-center"
+        onsubmit="event.preventDefault();"
+      >
+        <div class="search-text-field d-flex">
+          <div
+            class="search-icon-bg d-flex align-items-center justify-content-center"
+          >
+            <span class="search-icon"></span>
+          </div>
+          <input
+            class="search"
+            type="search"
+            placeholder="Avangers, Interstellar, ..."
+          />
         </div>
-        <input
-          class="search"
-          type="search"
-          placeholder="Avangers, Interstellar, ..."
-        />
-        <button class="btn btn-success" type="button">Search</button>
+        <button class="btn btn-primary" type="button">Search</button>
       </form>
     </header>
   </body>

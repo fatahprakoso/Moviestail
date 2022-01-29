@@ -5,6 +5,17 @@
 @import "./../../node_modules/bootstrap/scss/utilities";
 @import "./../../node_modules/bootstrap/scss/reboot";
 
+$theme-colors: (
+  "primary": #0e2252,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
 // // Layout & components
 // @import "./../../node_modules/bootstrap/scss/root";
 // @import "./../../node_modules/bootstrap/scss/reboot";
@@ -13,7 +24,7 @@
 // @import "./../../node_modules/bootstrap/scss/containers";
 // @import "./../../node_modules/bootstrap/scss/grid";
 // @import "./../../node_modules/bootstrap/scss/tables";
-@import "./../../node_modules/bootstrap/scss/forms";
+// @import "./../../node_modules/bootstrap/scss/forms";
 @import "./../../node_modules/bootstrap/scss/buttons";
 // @import "./../../node_modules/bootstrap/scss/transitions";
 // @import "./../../node_modules/bootstrap/scss/dropdown";
@@ -44,10 +55,8 @@
 // Utilities
 @import "./../../node_modules/bootstrap/scss/utilities/api";
 
-.form-control {
-  &:focus {
-    outline: none;
-  }
+::-webkit-scrollbar {
+  display: none;
 }
 
 .full-vh-vw {
@@ -55,8 +64,17 @@
   height: 100vh;
 }
 
-::-webkit-scrollbar {
-  display: none;
+.search-form {
+  position: absolute;
+  top: 45vh;
+  font-size: 1.5rem;
+}
+
+.search-text-field {
+  box-shadow: 0 0 1px 0.5px #242424;
+  padding-left: 0.5em;
+  background-color: #fff;
+  border-radius: 1.5rem;
 }
 
 .search {
@@ -66,30 +84,11 @@
   padding: 0 1em;
   outline: none;
   border: none;
+  border-radius: 1rem;
 }
 
-.search-form {
-  box-shadow: 0 0 1px 0.5px #242424;
-  position: absolute;
-  top: 45vh;
-  font-size: 1.5em;
-  padding-left: 0.5em;
-  background-color: #fff;
-  border-radius: 0.5rem;
-}
-
-.btn {
-  border-radius: 0 0.5rem 0.5rem 0;
-}
-
-.header {
-  position: relative;
-}
-
-.carousel-content {
-  background-image: url("../resources/header.jpg");
-  background-position: center;
-  background-size: cover;
+.search-icon-bg {
+  border-radius: 1rem;
 }
 
 .search-icon {
@@ -105,4 +104,25 @@
   background-color: #fff;
   height: 2.5em;
   width: 2.5em;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5em;
+  height: 3.6em;
+  width: 4.6em;
+  font-size: 0.75em;
+  border-radius: 1.5rem;
+}
+
+.header {
+  position: relative;
+}
+
+.carousel-content {
+  background-image: url("../resources/header.jpg");
+  background-position: center;
+  background-size: cover;
 }
