@@ -8,7 +8,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header d-flex flex-column align-items-center">
+    <header class="d-flex flex-column align-items-center position-relative">
       <div
         id="carouselExampleSlidesOnly"
         class="carousel slide"
@@ -26,14 +26,9 @@
           </div>
         </div>
       </div>
-      <form
-        class="search-form d-flex align-items-center justify-content-center"
-        onsubmit="event.preventDefault();"
-      >
-        <div class="search-text-field d-flex">
-          <div
-            class="search-icon-bg d-flex align-items-center justify-content-center"
-          >
+      <form class="search-form" onsubmit="event.preventDefault();">
+        <div class="search-text-field">
+          <div class="search-icon-bg">
             <span class="search-icon"></span>
           </div>
           <input
@@ -42,7 +37,7 @@
             placeholder="Avangers, Interstellar, ..."
           />
         </div>
-        <button class="btn btn-primary" type="button">Search</button>
+        <button class="btn btn-primary search-btn" type="button">Search</button>
       </form>
     </header>
   </body>

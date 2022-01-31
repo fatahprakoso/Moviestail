@@ -54,75 +54,14 @@ $theme-colors: (
 
 // Utilities
 @import "./../../node_modules/bootstrap/scss/utilities/api";
+@import "./utilities.scss";
+
+// Components
+@import "./components/header-carousel.scss";
+@import "./components/search-form.scss";
+
+// Global Styling
 
 ::-webkit-scrollbar {
   display: none;
-}
-
-.full-vh-vw {
-  width: 100vw;
-  height: 100vh;
-}
-
-.search-form {
-  position: absolute;
-  top: 45vh;
-  font-size: 1.5rem;
-}
-
-.search-text-field {
-  box-shadow: 0 0 1px 0.5px #242424;
-  padding-left: 0.5em;
-  background-color: #fff;
-  border-radius: 1.5rem;
-}
-
-.search {
-  margin: 0 0.2em 0 -0.25em;
-  width: 20em;
-  height: 2.5em;
-  padding: 0 1em;
-  outline: none;
-  border: none;
-  border-radius: 1rem;
-}
-
-.search-icon-bg {
-  border-radius: 1rem;
-}
-
-.search-icon {
-  background-image: url(./../resources/search.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 1.5em;
-  width: 1.5em;
-  display: block;
-}
-
-.search-icon-bg {
-  background-color: #fff;
-  height: 2.5em;
-  width: 2.5em;
-}
-
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 0.5em;
-  height: 3.6em;
-  width: 4.6em;
-  font-size: 0.75em;
-  border-radius: 1.5rem;
-}
-
-.header {
-  position: relative;
-}
-
-.carousel-content {
-  background-image: url("../resources/header.jpg");
-  background-position: center;
-  background-size: cover;
 }
