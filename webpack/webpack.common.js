@@ -1,7 +1,7 @@
 module.exports = {
   entry: {
-    index: `${__dirname}/../src/index.js`,
-    vendor: `${__dirname}/../src/vendor.js`,
+    index: `${__dirname}/../src/script/index.js`,
+    vendor: `${__dirname}/../src/script/vendor.js`,
   },
   module: {
     rules: [

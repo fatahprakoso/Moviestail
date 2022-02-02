@@ -7,8 +7,8 @@
 
 $theme-colors: (
   "primary": #0e2252,
-  "secondary": $secondary,
-  "success": $success,
+  "secondary": #1b3779,
+  "success": #008876,
   "info": $info,
   "warning": $warning,
   "danger": $danger,
@@ -64,4 +64,8 @@ $theme-colors: (
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+body {
+  background-color: map-get($theme-colors, primary);
 }

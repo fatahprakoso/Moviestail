@@ -10,7 +10,7 @@
   <body>
     <header class="d-flex flex-column align-items-center position-relative">
       <div
-        id="carouselExampleSlidesOnly"
+        id="carousel-container"
         class="carousel slide"
         data-bs-ride="carousel"
       >
@@ -32,12 +32,20 @@
             <span class="search-icon"></span>
           </div>
           <input
+            id="search-text-field"
             class="search"
             type="search"
             placeholder="Avangers, Interstellar, ..."
+            autocomplete="off"
           />
         </div>
-        <button class="btn btn-primary search-btn" type="button">Search</button>
+        <button
+          id="search-button"
+          class="btn btn-success search-btn"
+          type="button"
+        >
+          Search
+        </button>
       </form>
     </header>
   </body>

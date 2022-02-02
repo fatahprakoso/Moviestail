@@ -3,3 +3,10 @@
   background-position: center;
   background-size: cover;
 }
+
+.carousel-content-colapse {
+  background-color: $secondary;
+  width: 100vw;
+  height: 50px;
+  transition: all 1s ease-in;
+}

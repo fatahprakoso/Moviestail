@@ -37,7 +37,7 @@ module.exports = webpackMerge(common, {
   optimization: {
     minimizer: [
       new HTMLPlugin({
-        template: `${__dirname}/../src/template.html`,
+        template: '../src/template.html',
         minify: {
           removeAttributeQuotes: true,
           removeComments: true,
