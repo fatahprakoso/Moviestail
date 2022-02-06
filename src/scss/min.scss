@@ -7,10 +7,10 @@
 
 $theme-colors: (
   "primary": #0e2252,
-  "secondary": #1b3779,
-  "success": #008876,
-  "info": $info,
-  "warning": $warning,
+  "secondary": #757687,
+  "success": #a9aabc,
+  "info": #4e0916,
+  "warning": #833b40,
   "danger": $danger,
   "light": $light,
   "dark": $dark,
@@ -67,5 +67,20 @@ $theme-colors: (
 }
 
 body {
-  background-color: map-get($theme-colors, primary);
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    #0e2252,
+    #26305c,
+    #393f66,
+    #4b4f70,
+    #5d5f7a,
+    #696b83,
+    #76778b,
+    #828394,
+    #8c8d9e,
+    #9596a8,
+    #9fa0b2,
+    #a9aabc
+  );
 }

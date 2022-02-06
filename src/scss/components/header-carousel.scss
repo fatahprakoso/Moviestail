@@ -1,12 +1,29 @@
-.carousel-content {
-  background-image: url("../resources/header.jpg");
-  background-position: center;
-  background-size: cover;
+.carousel-header {
+  position: fixed;
 }
 
-.carousel-content-colapse {
+.carousel-content {
+  background-position: center;
+  background-size: cover;
   background-color: $secondary;
-  width: 100vw;
-  height: 50px;
-  transition: all 1s ease-in;
+  background-repeat: no-repeat;
+  filter: blur(200);
+}
+
+.ci-1 .carousel-content {
+  background-image: url("./../../resources/header-1.jpg");
+}
+
+.ci-2 .carousel-content {
+  background-image: url("./../../resources/header-4.jpg");
+}
+
+.ci-3 .carousel-content {
+  background-image: url("./../../resources/header-3.jpg");
+}
+
+.carousel-container-colapse {
+  transition: transform 1s ease-in, opacity 0.9s linear;
+  transform: translateY(-100vh);
+  opacity: 0;
 }

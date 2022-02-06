@@ -5,9 +5,10 @@
   position: absolute;
   top: 45vh;
   font-size: 1.5rem;
+  gap: 0.1em;
 }
 
-.search-text-field {
+.search-container {
   display: flex;
   box-shadow: 0 0 1px 0.5px #242424;
   padding-left: 0.5em;
@@ -26,7 +27,7 @@
 }
 
 .search-icon {
-  background-image: url(./../resources/search.svg);
+  background-image: url(./../../resources/search.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 1.5em;
@@ -45,9 +46,18 @@
 }
 
 .search-btn {
-  margin-left: 0.5em;
   height: 3.6em;
   width: 4.6em;
   font-size: 0.75em;
   border-radius: 1.5rem;
+}
+
+.search-form-colapse {
+  transition: all 1s ease-in;
+  transform: translateY(calc(-45vh + 0.1rem)) scale(0.75);
+}
+
+.search-btn-colapse {
+  transition: all 0.5s ease-in;
+  opacity: 0;
 }

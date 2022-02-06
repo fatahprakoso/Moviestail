@@ -31,9 +31,16 @@ module.exports = webpackMerge(common, {
           'style-loader', // 3. Creates `style` nodes from JS strings
           'css-loader', // 2. Translates CSS into CommonJS
           {
+            loader: 'resolve-url-loader',
+            // options: {
+            //   removeCR: true,
+            // },
+          },
+          {
             loader: 'sass-loader',
             options: {
               implementation: require('sass'),
+              sourceMap: true,
             },
           }, // 1. do sass compile
         ],
