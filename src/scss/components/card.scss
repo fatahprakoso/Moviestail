@@ -1,0 +1,29 @@
+.movie-card {
+  width: 13rem;
+  z-index: -1;
+  background-color: map-get($theme-colors, "secondary");
+  box-shadow: 0 0 0.25px 0.1px rgb(39, 39, 39);
+  opacity: 0;
+  transform: translateY(3px);
+}
+
+.movie-card-transition {
+  opacity: 1;
+  transform: translateY(-3px);
+  transition: all 1s;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  margin: 7.5rem 6rem;
+  row-gap: 3rem;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+
+.card-subtitle {
+  color: rgba($color: #080808, $alpha: 0.7);
+}
