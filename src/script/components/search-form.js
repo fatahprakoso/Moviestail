@@ -58,13 +58,11 @@ searchTextField.addEventListener('keyup', (e) => {
         });
       }, 1000);
 
-      const card = document.createElement('div');
       getCards(searchTextField.value).then((cardsElement) => {
-        card.innerHTML = cardsElement;
+        cards.innerHTML = cardsElement;
         // console.log(cardsElement);
         // console.log(searchTextField.value);
       });
-      cards.appendChild(card);
 
       searchTextField.value = '';
     }
