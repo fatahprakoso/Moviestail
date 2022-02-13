@@ -27,3 +27,10 @@
 .card-subtitle {
   color: rgba($color: #080808, $alpha: 0.7);
 }
+
+.movie-card-img {
+  width: 13rem;
+  height: 18.5rem;
+  object-fit: cover;
+  background-color: #666666;
+}
