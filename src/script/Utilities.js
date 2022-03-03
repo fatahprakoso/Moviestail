@@ -5,6 +5,7 @@ async function getCards(searchText, page = 1) {
     .finally(() => console.log('finally'));
 
   let cardsElement = '';
+
   data.Search.forEach((c) => {
     cardsElement += `
       <div class="card movie-card">
@@ -69,4 +70,4 @@ function displayCards() {
   }
 }
 
-export { getCards, displayCards };
+export { getCards, displayCards, getPageNumber };
